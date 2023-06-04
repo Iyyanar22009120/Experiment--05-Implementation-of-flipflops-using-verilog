@@ -107,18 +107,79 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 ### PROGRAM 
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: IYYANAR S
+RegisterNumber:  212222240036
+```
+```
+i) SR FLIP FLOP:
 
+module sr(s,r,clock,q,qbar);
+input s,r,clock;
+output q,qbar;
+wire x,y;
+nand(x,s,clock);
+nand(y,r,clock);
+nand(q,x,qbar);
+nand(qbar,y,q);
+endmodule
+
+ii) D FLIP FLOP:
+
+module dflp(D,Clock,Q,Qbar);
+input D,Clock;
+output Q,Qbar;
+assign Dbar = ~D;
+wire X,Y;
+nand (X,D,Clock);
+nand (Y,Dbar,Clock);
+nand (Q,X,Qbar);
+nand (Qbar,Y,Q);
+endmodule
+
+
+iii) JK FLIP FLOP:
+
+module jkflp(J,K,Clock,Q,Qbar);
+input J,Clock,K;
+output Q,Qbar;
+wire S,R;
+nand (S,J,Clock,Qbar);
+nand (R,K,Clock,Q);
+nand (Q,S,Qbar);
+nand (Qbar,R,Q);
+endmodule
+
+iv) T FLIP FLOP:
+
+module tflp(T,Clock,Q,Qbar);
+input T,Clock;
+output Q,Qbar;
+wire A,B;
+nand (A,T,Clock,Qbar);
+nand (B,T,Clock,Q);
+nand (Q,A,Qbar);
+nand (Qbar,B,Q);
+endmodule
+```
 
 
 
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
+## SR FLIP FLOP
+![sr rtl](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/5dfaaa61-1bfc-40a7-8a58-9849191ee5b4)
+
+## D FLIP FLOP
+![d rtl](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/206e5a8e-6728-4d8a-ba0d-c528946d9906)
+
+## JK FLIP FLOP
+![jk rtl](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/da4af3c4-3dff-491a-9b76-d35815eaf8c0)
+
+## T FLIP FLOP
+![t rtl](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/d00ecac3-5652-4c16-89df-f236e20bdc13)
 
 
 
@@ -130,7 +191,17 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+## SR FLIP FLOP
+![sr wave](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/4f6accc7-bfd3-4b1f-a94a-225a56b260e1)
 
+## D FLIP FLOP
+![d wave](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/0c5ddafa-c02e-4820-9f76-b5ffdd8c4886)
+
+## JK FLIP FLOP
+![jk wave](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/5b609e05-e18d-4a17-aa7e-585aac8d6b21)
+
+## T FLIP FLOP
+![t wave](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/f73506bd-c9cd-4e7b-9cfb-8ca9642a328c)
 
 
 
@@ -138,3 +209,4 @@ RegisterNumber:
 
 
 ### RESULTS 
+All the flipflops are implementde using verilog and their functionality has been validated using their functional tables.
