@@ -194,18 +194,6 @@ Q=(J&(~Q))|((~K)&Q);
 Qbar=((~J)&(Qbar))|K&(~Qbar);
 end
 endmodule
-module flipflops(J,K,clk,Q,Qbar);
-input J,K,clk;
-output reg Q;
-output reg Qbar;
-initial Q=0;
-initial Qbar=1;
-always @(posedge clk)
-begin
-Q=(J&(~Q))|((~K)&Q);
-Qbar=((~J)&(Qbar))|K&(~Qbar);
-end
-endmodule
 ```
 ## RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/f56752d4-7720-44e7-b869-88398cdd518e)
