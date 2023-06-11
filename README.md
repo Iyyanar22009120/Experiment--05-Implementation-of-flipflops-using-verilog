@@ -176,7 +176,8 @@ end
 endmodule
 ```
 ## RTL LOGIC FOR FLIPFLOPS
-![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/7205cbdb-d8d6-48dd-b4d3-80c93713564a)
+![5 5](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/5f025d43-8ee3-4d84-8649-a70af58f1df6)
+
 ## TIMING DIGRAMS FOR FLIP FLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/34329e15-3314-4046-a66f-2734d748002e)
 ## PROGRAM 4(JK FLIP FLOP)
