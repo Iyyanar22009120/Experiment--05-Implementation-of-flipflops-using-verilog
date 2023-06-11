@@ -114,13 +114,13 @@ STEP : 6 Run the program and choose RTL viewer to get RTL realization.
 
 
 ### PROGRAM 
-
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: IYYANAR S
 RegisterNumber:  212222240036
-
+```
 ## PROGRAM 1(T FLIP FLOP)
-
+```
 module flipflops(T,clk,Q,Qbar);
 input T,clk;
 output reg Q;
@@ -133,13 +133,14 @@ Q=(T&(~Q))|((~T)&Q);
 Qbar=((~T)&Qbar)|(T&(~Qbar));
 end
 endmodule
+```
 
 ## RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/c3e84e83-82b7-4b41-ba53-ceed60632d9b)
 ## TIMING DIGRAMS FOR FLIP FLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/79ae300c-ead6-40e8-bdc9-b37cdced416f)
 ## PROGRAM 2(D FLIP FLOP)
-
+```
 module flipflops(D,clk,Q,Qbar);
 input D,clk;
 output reg Q;
@@ -152,7 +153,7 @@ Q=D;
 Qbar=~D;
 end
 endmodule
-
+```
 ## RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/d032ebfc-292d-4669-9adc-22b7eb854cd5)
 ## TIMING DIGRAMS FOR FLIP FLOPS
@@ -160,7 +161,7 @@ endmodule
 
 
 ## PROGRAM 3(SR FLIP FLOP)
-
+```
 module flipflops(S,R,clk,Q,Qbar);
 input S,R,clk;
 output reg Q;
@@ -173,13 +174,13 @@ Q=S|((~R)&Q);
 Qbar=R|((~S)&(Qbar));
 end
 endmodule
-
+```
 ## RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/7205cbdb-d8d6-48dd-b4d3-80c93713564a)
 ## TIMING DIGRAMS FOR FLIP FLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/34329e15-3314-4046-a66f-2734d748002e)
 ## PROGRAM 4(JK FLIP FLOP)
-
+```
 module flipflops(J,K,clk,Q,Qbar);
 input J,K,clk;
 output reg Q;
@@ -204,7 +205,7 @@ Q=(J&(~Q))|((~K)&Q);
 Qbar=((~J)&(Qbar))|K&(~Qbar);
 end
 endmodule
-
+```
 ## RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/Iyyanar22009120/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118680259/f56752d4-7720-44e7-b869-88398cdd518e)
 ## TIMING DIGRAMS FOR FLIP FLOPS
